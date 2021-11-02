@@ -89,21 +89,21 @@ const tmp_hit = JSON.parse(fs.readFileSync('./src/hit.json'))
 const tmphit = JSON.parse(fs.readFileSync('./src/today.json'))
 //******************** 》Setting《 ********************\\
 menusimpel = false
-owner = "6281804680327@s.whatsapp.net"
-ownerN = "6281804680327"
+owner = "628157664068@s.whatsapp.net"
+ownerN = "628157664068"
 setgrup = "6281226770537-1606097314@g.us"
 wa = '0@s.whatsapp.net'
 blocked = []
 public = true
 picdetec = false
 shp = '⬡'
-nama = 'Senku BOT'
-fake = '@Rapaa021_'
+nama = 'GNZXC BOT'
+fake = '@gianabif14'
 antidel = false
 antical = false
 aread = false
 ngetik = false
-vn = true
+vn = false
 
 //******************** 》Prefix《 ********************\\
 let multi = true
@@ -151,9 +151,9 @@ let {
 //******************** 》Vcard《 ********************\\
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
-            + 'FN:Senku シ︎\n'
-            + 'ORG:Owner Senku;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6281804680327:+62 831-1800-241\n'
+            + 'FN:Gian シ︎\n'
+            + 'ORG:Owner GNZXC BOT;\n'
+            + 'TEL;type=CELL;type=VOICE;waid=628157664068:+62 815-7664-068\n'
             + 'END:VCARD'
             
 const sleep = async (ms) => {
@@ -391,10 +391,10 @@ senku.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
 isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
-                "title": `Whatsapp-BOT\nS e n. (@021senkuu_) •Instagram photos and Videos`,
+                "title": `Whatsapp-BOT\nGian Abi F. (@gianabif14) •Instagram photos and Videos`,
                 "body": "",
                 "previewType": "PHOTO",
-                "thumbnailUrl": "https://telegra.ph/file/bbb5eca08130920edbcb4.jpg",
+                "thumbnailUrl": "https://i.ibb.co/ZMH7sDv/image.png",
                 "thumbnail": gambar3,
                 "sourceUrl": ``
 },mentionedJid:[sender]}, quoted : sen})
@@ -1082,32 +1082,8 @@ addVote(from,split[1],split[0],split[2],reply)
 }
 break
  
-case 'jadibot':
-if(itsMe) return reply('Tidak bisa jadibot di dalam bot')
-if (isGroup) return reply(`*Fitur Hanya dapat digunakan dalam Private Chat! => wa.me/${botN}?text=${prefix}jadibot*`)
-jadibot(reply,senku,from, sen)
-break
-    
-case 'stopjadibot':
-if(!itsMe && !isOwner)return reply('tidak bisa stopjadibot kecuali owner')
-stopjadibot(reply)
-break
-    
-case 'listbot':
-let tekss = 'L I S T B O T  S E N K U\n\n'
-let lbt = [];
-for(let i of listjadibot) {
-lbt.push(i.jid)
-tekss += `N a m a : ${i.name}
-T a g : @${i.jid.split('@')[0]}
-D e v i c e: ${i.phone.device_manufacturer}
-M o d e l : ${i.phone.device_model}\n\n`
-}
-mentions(monospace(tekss), lbt, true)
-break
-
 case 'sc': case 'script':
-reply(`Sc ini menggunakan : https://github.com/SenkuXZ/Bot-Wa`)
+reply(`Private chat owner:v`)
 break
 
 case 'tutorial':
@@ -1224,10 +1200,10 @@ await senku.sendMessage(from, gbuttonan, MessageType.buttonsMessage, {contextInf
 isForwarded: true,
 sendEphemeral: false,
 "externalAdReply": {
-                "title": `I'm Senku-BOT👋`,
+                "title": `I'm GNZXC-BOT👋`,
                 "body": "",
                 "previewType": "PHOTO",
-                "thumbnailUrl": "https://telegra.ph/file/bbb5eca08130920edbcb4.jpg",
+                "thumbnailUrl": "https://i.ibb.co/ZMH7sDv/image.png",
                 "thumbnail": fakeg,
                 "sourceUrl": ``
 },mentionedJid:[mjid,sender,mjud]},quoted:sen})
@@ -1258,10 +1234,10 @@ senku.sendMessage(from, help(prefix,pushname,usrr,waktoo,tag,wa,UFree,THit,wib,T
 isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
-                "title": `Hallo ${pushname}\nS e n. (@021senkuu_) •Instagram Story's`,
+                "title": `Hallo ${pushname}\nGian Abi F. (@gianabif14) •Instagram Story's`,
                 "body": "",
                 "previewType": "PHOTO",
-                "thumbnailUrl": "https://telegra.ph/file/bbb5eca08130920edbcb4.jpg",
+                "thumbnailUrl": "https://i.ibb.co/ZMH7sDv/image.png",
                 "thumbnail": gambar3,
                 "sourceUrl": ``
 },mentionedJid:[mjid,sender,mjud]}, quoted : sen})
